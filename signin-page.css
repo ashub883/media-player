@@ -1,0 +1,73 @@
+body{
+	background-image: linear-gradient(45deg, cyan, blue);
+
+}
+
+    /* CANCEL BUTTON TO CANCEL THE SIGNIN */
+
+#cancel{
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	position: fixed;
+	color: white;
+	text-decoration: none;
+	font-size: x-large;
+	border: 2px solid chocolate;
+	background-image: linear-gradient(45deg, cyan, blue);
+	z-index: 1;
+}
+
+
+      /*   CONTAINER DIV FOR FORM */
+
+
+div{
+	border-radius:50px;
+	border:5px solid yellow;
+	background-image: linear-gradient(45deg, chocolate, green);
+	position: relative;
+	left: 30%;
+	top: 70px;
+	width: 400px;
+	align-items: center;
+}
+
+h1{
+	position: relative;
+	color:white;
+	left: 7%;
+	top:20px;
+}
+
+ 
+      /*  FORM   */
+
+
+form{
+	color:white;
+	padding: 120px;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+
+#submit-btn div{
+	position:relative;
+	top:20px;
+	left:20%;
+	height:40px;
+	width:100px;
+	border:2px solid white;
+	border-radius:6px;
+}
+
+#submit-btn input{
+	height:100%;
+	width:100%;
+	color:white;
+	background-color:slategray;
+	border:2px solid white;
+	font-size:x-large;
+	font-family:sans-serif;
+
+}

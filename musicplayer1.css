@@ -1,0 +1,1051 @@
+body{
+	background-color: #0D102A;
+}
+
+  /* FIXED NAVIGATION BAR */
+
+nav .nav{
+	position: relative;
+	margin: 0;
+	height: 40px;
+	width: 100%;
+	z-index: 1;
+}
+
+
+#navigation-bar{
+	top: 0;
+	left: 0;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	height:40px;
+	background-color: #0D102A;
+	color:white;
+}
+
+
+
+#logo img{
+	height:40px;
+	width:40px;
+}
+
+
+#logo{
+	display: flex;
+	flex-direction: row;
+	z-index:2;
+}
+
+
+#favourites{
+	margin-left: 5vw;
+	margin-right: 30vw;
+	box-sizing: border-box;
+}
+
+
+#favourites a{
+	text-decoration: none;
+	color: white;
+}
+
+
+#favourites div{
+	height:0;
+	width:0;
+	overflow:hidden;
+}
+
+
+#favourites div a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px dashed white;
+	line-height: 2;
+	margin-bottom: 5px;
+	margin-left: 20px;
+	border-radius: 10%;
+
+}
+
+#favourites:hover div{
+	position: fixed;
+	height:200px;
+	width:500px;
+	background-image:linear-gradient(45deg, cyan, blue);
+	border-radius: 10%;
+	top:5.5%;	
+}
+
+
+#search-bar{
+	background-color: #111A40;
+	margin-top: 5px;
+	height: 30px;
+	width: 25vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 5px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	min-width: 160.75px;
+}
+
+
+#search-bar img{
+	display: inline-block;
+	margin-left: 0.5vw;
+	height: 1.2em;
+	width: 1.2em;
+}
+
+
+#search-bar input{
+	background-color: transparent;
+	height: 1rem;
+	width: 70%;
+	display: inline-block;
+	border: none;
+	margin-left: 0.5vw;
+	margin-bottom: 0.2vh;
+}
+
+
+#notification img{
+	height: 30px;
+	width: 30px;
+	margin-left: 5vw;
+	margin-top: 4px;
+}
+
+
+#account a img{
+	height: 50px;
+	width: 50px;
+	margin-left: 5vw;
+	margin-top: 4px;
+	border-radius: 50%;
+
+}
+
+
+#side-menu{
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+}
+
+
+#side-menu-menu{
+	background-image:linear-gradient(45deg, cyan, blue);
+	width:0px;
+	height:0;
+	position:fixed;
+	box-sizing:border-box;
+	left:42%;
+	overflow:hidden;
+	border-radius:20px;
+}
+
+
+#side-menu-logo img{
+	height:40px;
+	width:40px;
+}
+
+
+#side-menu-logo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size:x-large;
+}
+
+
+#side-menu-search-bar{
+	background-color: #111A40;
+	height: 30px;
+	width:220px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 5px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-bottom:20px;
+}
+
+
+#side-menu-search-bar img{
+	position:absolute;
+	display: inline-block;
+	margin-left:-10px;
+}
+
+
+#side-menu-search-bar input{
+	background-color: transparent;
+	height: 1rem;
+	width: 60%;
+	display: inline-block;
+	border: none;
+	margin-bottom: 0.2vh;
+}
+
+
+#side-menu-menu a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: x-large;
+	line-height: 2;
+}
+
+
+    /*MAIN SECTION OF PLAYER */
+
+main{
+	display: inline-block;
+	color: white;
+	width: 65%;
+	margin-left: 5%;
+	margin-right: 3%;
+}
+
+
+     /*DIFFERENT DJ's SECTION*/
+
+
+#dj{
+	display: flex;
+	flex-direction: row;
+	background-color: #0D102A;
+	margin-top: 60px;
+}
+
+
+#dj img{
+	width: 31%;
+	margin-left: 15px;
+	transition: 0.3s ease-in-out;
+}
+
+
+#dj:hover img{
+
+	transform: scale(0.9);
+}
+
+
+#dj img:hover{
+	transform: scale(1);
+}
+
+
+    /*LATEST RELEASED SONGS SECTION*/
+
+
+    /*HERE l-r is latest release */
+
+#l-r-column{
+	position: relative;
+	width: 100%;
+	color: white;
+	margin-bottom: 60px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+#l-r-column div{
+	height: 60px;
+	width: 45%;
+	margin-bottom: 5px;
+}
+
+
+#l-r-column div a img{
+	height: 60px;
+	width: 60px;
+	z-index: -1;
+}
+
+#l-r-column div .img{
+	position: relative;
+	height: 60px;
+	width: 60px;
+	left: -60px;
+}
+
+#l-r-column div >span{
+	position: absolute;
+	margin-left:-50px;
+	color: white;
+    display: inline;
+ }
+
+#l-r-column div .dots{
+	position: absolute;
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 20px;
+    width: 20px;
+    margin-left:20%;
+ }
+
+
+#l-r-column div .dots img{
+    height: 15px;
+}
+
+
+#l-r-column div .dots >img{
+    height: 20px;
+    width: 20px;
+}
+
+
+.dots:hover li{
+	transform:translate(-125%, -200%);;
+	font-size: small;
+	background-image:linear-gradient(45deg,cyan,blue);
+	color:white;
+	opacity: 1;
+	height: 20px;
+	width: 150px;
+	border-bottom: 0.02px solid white;
+}
+
+
+.more-options-ul li{
+	font-size:0px;
+	overflow: hidden;
+}
+
+
+#l-r-column div img:hover{
+	z-index: 1;
+	opacity: 0.5;
+}
+
+
+    /* POPULAR ARTISTS SECTION */
+
+    /* HERE p-a is popular artists */
+
+
+#p-a-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	overflow: hidden;
+	margin-bottom: 60px;
+}
+
+#p-a-container div{
+	height: 110px;
+	width: 110px;
+	margin-bottom:45px
+}
+
+
+#p-a-container div a img{
+	border-radius: 50%;
+}
+
+
+#p-a-container div a img{
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+
+.play-button{
+	position: relative;
+	top: -110px;
+}
+
+
+#p-a-container div a:hover img{
+	z-index:1;
+	opacity:0.8;
+}
+
+
+#p-a-container div span{
+	position: relative;
+	top: -110px;
+	color:white;
+}
+
+
+      /* RADIO SECTION */
+
+      /* THIS PART HAVE SOME INLINE CSS TO GIVE BACKGROND COLOR AND BORDER RADIUS TO EACH RADIO DIV*/
+
+
+#radio{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: #121747;
+	margin-bottom: 60px;
+}
+
+
+#radio div{
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	border-radius:50%;	
+	overflow: hidden;
+}
+
+
+#radio #radio-icon{
+	width: 15%;
+	height:90px;
+	border-radius: 20%;
+}
+
+
+#radio div img{
+	height:100%;
+	width:100%;
+	opacity:0.7
+}
+
+
+#radio div span{
+	position: relative;
+	top: -50px;
+}
+
+
+      /* OTHER RADIO POSTERS SECTION */
+
+      /* THIS PART HAVE SOME INLINE CSS TO GIVE BACKGROUND COLOR TO EACH RADIO POSTER */
+
+
+#radio-poster-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+
+#radio-poster-container div{
+	height: 150px;
+	width: 32%;
+	overflow: hidden;
+	text-align: center;
+}
+
+
+#radio-poster-container div img{
+	height: 100%;
+	width: 100%;
+	opacity: 0.7;
+	transition: 1s ease-in-out;
+}
+
+
+#radio-poster-container div:hover img{
+	transform: scale(1.3);
+}
+
+
+#radio-poster-container div span{
+	position: relative;
+	top: -90px;
+}
+
+
+     /* LATEST RELEASED HINDI SONGS SECTION */
+
+
+#latest-hindi-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+
+#latest-hindi-container div{
+	width: 120px;
+	margin-bottom:10px;
+}
+
+
+#latest-hindi-container div img{
+	height: 160px;
+	width: 100%;
+}
+
+
+      /* LATEST RELEASED ENGLISH SONGS */
+
+
+#latest-english-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+
+#latest-english-container div{
+	width: 120px;
+	margin-bottom:10px;
+}
+
+
+#latest-english-container div img{
+	height: 160px;
+	width: 100%;
+}
+
+
+     /*  RIGHT SIDE SONGS QUEUE */
+
+
+#right-side-queue{
+	display: inline-block;
+	position:fixed;
+	top:-50px;
+	padding-top:150px;
+	padding-bottom:0;    
+	height:100%;
+	width:30%;
+	background-color:transparent;
+}
+
+
+#right-side-queue-inner {
+	height:100%;
+	width:100%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	color: white;
+}
+
+
+#right-side-queue-inner #queue-top{
+	position: fixed;
+	top:50px;
+	height: 50px;
+	width: 100%;
+}
+
+
+#queue-top h2{
+	display: inline-block;
+	color: white;
+	margin-left:10px;
+	margin-right:10%;
+}
+
+
+#queue-btn{
+	position: relative;
+	color: cyan;
+	display:inline-block;
+}
+
+
+#right-side-queue-inner ol li{
+	height: 30px;
+	margin-bottom: 20px;
+}
+
+
+#right-side-queue-inner ol li span{
+	display:inline-block;
+	position:relative;
+	font-size: smaller;
+}
+
+
+#right-side-queue-inner ol li img{
+	height: 100%;
+	width: 30px;
+}
+
+
+#right-side-queue-inner #like{
+	position: relative;
+	left:50%;
+	height: 20px;
+	width: 20px;
+	z-index: -1;
+}
+
+
+    /* QUEUE-OPTIONS HAVE SOME INLINE CSS TO GIVE DISPLAY AS BLOCK TO ANCHOR TAGS */
+
+
+#queue-options{
+	height: 0;
+	width: 0;
+	position: fixed;
+	top:0;
+	left: 0;
+	color:white;
+	overflow: hidden;
+}
+
+
+#queue-btn a{
+	display:inline-block;
+	text-decoration:none;
+	color:white;
+	border-bottom:0.5px solid white;
+	margin-left:10px;
+}
+
+
+#queue-btn >a{
+	color:cyan;
+	border:none;	
+}
+
+
+#queue-options:target{
+	height: 8%;
+	width: 130px;
+	top:15%;
+	left: 85%;
+	background-image:linear-gradient(45deg, cyan, blue);
+}
+
+
+#right-side-queue-inner .like-the-song{
+	position: relative;
+	left:80%;
+	top: -20px;
+	height: 20px;
+	width: 20px;
+}
+
+
+#right-side-queue-inner .like-the-song img{
+	height: 20px;
+	width: 20px;
+}
+
+
+#right-side-queue-inner .like-the-song .like{
+	position: relative;
+	left: -5%;
+	top:-120%;
+	height:0px;
+	width:0px;
+}
+
+
+#right-side-queue-inner .like-the-song:hover .like{
+	height:20px;
+	width:20px;  
+}
+
+
+     /*  BOTTOM MUSIC BAR */
+
+
+#bottom-music-player{
+	position:fixed;
+	top:100%;
+	height:100px;
+	width: 100%;
+	left:0;
+	background-image:linear-gradient(45deg, grey, black);
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: center;
+	color:white;
+	transition: 0.3s ease-in;
+	border:2px solid grey
+}
+
+
+#bottom-music-player:target{
+	transform: translateY(-100%);
+}
+
+
+#song-info{
+	margin-left:10px;
+	margin-top:20px;
+}
+
+
+#song-info img{
+	height:60px;
+	width:60px;
+}
+
+
+#song-info span{
+	display:inline-block;
+	position:relative;
+	line-height:2;
+	text-decoration:underline;
+}
+
+
+#song-info .like-the-song{
+	position: relative;
+	left:150px;
+	top: -60px;
+	height: 20px;
+	width: 20px;
+}
+
+
+#song-info .like-the-song img{
+	height: 20px;
+	width: 20px;
+}
+
+
+#song-info .like-the-song .like{
+	position: relative;
+	left: -5%;
+	top:-120%;
+	height:0px;
+	width:0px;
+}
+
+
+#song-info .like-the-song:hover .like{
+	height:20px;
+	width:20px;   
+}
+
+
+#song-info .add-to-fav{
+	height: 50px;
+	width: 50px;
+	position: relative;
+	left: 160px;
+	top:-95px;
+}
+
+
+#controls{
+	position:absolute;
+	left:20%;
+	width:50%;
+	height:100%;
+}
+
+
+#play{
+	top:25px;
+}
+
+
+#play img{
+	position:relative;
+	height:70px;
+	left:-16px;
+	top:-11px;
+}
+
+
+#controls button{
+	position:relative;
+	left:35%;
+	border-radius: 50%;
+	background-color:transparent;
+	height:50px;
+	width:50px;
+	border:transparent;
+	overflow:hidden;
+}
+
+
+#controls #seeker{
+	position:absolute;
+	height:5px;
+	margin-left: 10%;
+	width:100%;
+	background-color:white;
+	border-radius:50px;
+}
+
+
+#other-controls{
+	width: 15%;
+	display: inline-flex;
+	align-items:center;
+	position: relative;
+	margin-right:10px;
+	top:-20px;
+}
+
+
+#other-controls img{
+	margin-left:5px;
+	width: 20px;
+	height: 20px;
+}
+
+
+#other-controls #volume{
+	margin-left: 10px;
+	height: 4px;
+	width: 90%;
+	border-radius: 100px;
+	background-color:white;
+}
+
+
+      /*  FOR RESPONSIVENES */
+
+      /* CHANGES OCCUR WHEN SCREEN WIDTH IS LESS THEN OR EQUALS TO 755PX */
+
+
+@media screen and (max-width:755px){
+
+	#favourites{
+		height:0px;
+		width:0px;
+		overflow: hidden;
+		margin:0;
+	}
+
+
+	#search-bar{
+		height:0px;
+		width:0px;
+		overflow: hidden;
+	}
+
+
+	#notification{
+		height:0px;
+		width:0px;
+		overflow:hidden;
+	}
+
+
+	#account{
+		height:0px;
+		width:0px;
+		overflow:hidden;
+	}
+
+
+	#side-menu{
+		position:absolute;
+		top:5px;
+		left:90vw;
+		height: 30px;
+		width: 30px;
+	}
+
+
+	#side-menu img{
+		height: 30px;
+		width: 30px;
+		
+	}
+
+
+	#side-menu-search-bar img{
+		height:20px;
+		width:20px;
+	}
+
+
+	#side-menu:hover #side-menu-menu{
+		padding:30px;
+		width:400px;
+		height:100%;
+    }
+
+
+	main{
+		width:50%;
+	}
+
+
+	#right-side-queue{
+		width:45%;
+	}
+
+
+	#dj{
+		flex-direction:column;
+		align-items:center;
+	}
+
+
+	#dj img{
+		width:70%;
+		height:200px;
+		margin-bottom:10px;
+	}
+
+
+		#l-r-column div{
+		width:100%;
+	}
+
+
+	#l-r-column div .dots{
+		margin-left:40%;
+	}
+
+
+	#radio #radio-icon{
+		margin-left:25%;
+		margin-right:25%;
+		margin-bottom:20px;
+		width:50%;
+	}
+
+
+	#radio-poster-container{
+		flex-direction:column;
+		align-items:center;
+	}
+
+
+	#radio-poster-container div{
+		width:70%;
+		margin-bottom:20px;
+	}
+
+
+	#latest-hindi-container div{
+		width:60%;
+	}
+
+
+	#latest-english-container div{
+		width:60%;
+	}
+
+
+	#controls{
+		width:90%;
+		left:-5%;
+	}
+
+
+	#song-info{
+		width:0;
+		height:0;
+		overflow:hidden;
+	}
+
+
+	#other-controls{
+		width:0;
+		height:0;
+		overflow:hidden;
+	}
+
+
+}
+
+
+      /*  CHANGES OCCUR WHEN SCREEN SIZE IS LESS THEN OR EQUALS TO 500PX */
+
+
+@media screen and (max-width:500px){
+
+	main{
+		width:40%;
+	}
+
+
+	#right-side-queue{
+		width:55%;
+	}
+
+
+	#l-r-column div{
+		width:100%;
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		height:70px;
+	}
+
+
+	#l-r-column div >span{
+		width:0;
+		overflow:hidden;
+	}
+
+
+	#l-r-column div .dots{
+		width:0;
+		overflow:hidden;
+	}
+
+
+	#controls button{
+		position:relative;
+		left:20%;
+	}
+
+}
+
+
+      /* CHANGES OCCUER WHEN SCREEN SIZE IS LESS THEN OR EQUALS TO 350PX */
+
+
+@media screen and (max-width:350px){
+
+	main{
+		width:100%;
+	}
+
+
+	#right-side-queue{
+		width:0;
+		height:0;
+		overflow:hidden;
+	}
+
+
+	#right-side-queue-inner #queue-top{
+		height:0;
+		width:0;
+		overflow:hidden;
+	}
+
+
+	#controls button{
+		left:10%;
+	}
+
+
+}

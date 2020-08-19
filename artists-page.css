@@ -1,0 +1,684 @@
+body{
+	background-color: #0D102A;
+}
+
+
+    /* FIXED NAVIGATION BAR */
+
+
+nav .nav{
+	position: relative;
+	margin: 0;
+	height: 40px;
+	width: 100%;
+	z-index: 1;
+}
+
+
+#navigation-bar{
+	top: 0;
+	left: 0;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	height:40px;
+	background-color: #0D102A;
+	color:white;
+}
+
+
+#logo img{
+	height:40px;
+	width:40px;
+}
+
+
+#logo{
+	display: flex;
+	flex-direction: row;
+	z-index:2;
+}
+
+
+#favourites {
+	margin-left: 5vw;
+	margin-right: 30vw;
+	box-sizing: border-box;
+}
+
+
+#favourites a{
+	text-decoration: none;
+	color: white;
+}
+
+
+#favourites div{
+	height:0;
+	width:0;
+	overflow:hidden;
+}
+
+
+#favourites div a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px dashed white;
+	line-height: 2;
+	margin-bottom: 5px;
+	margin-left: 20px;
+	border-radius: 10%;
+}
+
+
+#favourites:hover div{
+	position: fixed;
+	height:200px;
+	width:500px;
+	background-image:linear-gradient(45deg, cyan, blue);
+	border-radius: 10%;
+	top:5.5%;
+	
+}
+
+
+#search-bar{
+	background-color: #111A40;
+	margin-top: 5px;
+	height: 30px;
+	width: 25vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 5px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	min-width: 160.75px;
+}
+
+
+#search-bar img{
+	display: inline-block;
+	margin-left: 0.5vw;
+	height: 1.2em;
+	width: 1.2em;
+}
+
+
+#search-bar input{
+	background-color: transparent;
+	height: 1rem;
+	width: 70%;
+	display: inline-block;
+	border: none;
+	margin-left: 0.5vw;
+	margin-bottom: 0.2vh;
+
+}
+
+
+#notification img{
+	height: 30px;
+	width: 30px;
+	margin-left: 5vw;
+	margin-top: 4px;
+}
+
+
+#account a img{
+	height: 50px;
+	width: 50px;
+	margin-left: 5vw;
+	margin-top: 4px;
+	border-radius: 50%;
+
+}
+
+
+#side-menu{
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+}
+
+
+#side-menu-menu{
+	background-image:linear-gradient(45deg, cyan, blue);
+	width:0px;
+	height:0;
+	position:fixed;
+	box-sizing:border-box;
+	left:42%;
+	overflow:hidden;
+	border-radius:20px;
+}
+
+
+#side-menu-logo img{
+	height:40px;
+	width:40px;
+}
+
+
+#side-menu-logo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size:x-large;
+}
+
+
+#side-menu-search-bar{
+	background-color: #111A40;
+	height: 30px;
+	width:220px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 5px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-bottom:20px;
+}
+
+
+#side-menu-search-bar img{
+	position:absolute;
+	display: inline-block;
+	margin-left:-10px;
+}
+
+
+#side-menu-search-bar input{
+	background-color: transparent;
+	height: 1rem;
+	width: 60%;
+	display: inline-block;
+	border: none;
+	margin-bottom: 0.2vh;
+}
+
+
+#side-menu-menu a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: x-large;
+	line-height: 2;
+}
+
+
+    /* FIXED BACK BUTTON TO GO TO PREVIOUS PAGE */
+
+
+#back{
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	position: fixed;
+	color: white;
+	text-decoration: none;
+	font-size: x-large;
+	border: 2px solid chocolate;
+	background-image: linear-gradient(45deg, cyan, blue);
+	z-index: 1;
+}
+
+
+       /* MAIN SECTION OF PAGE */
+
+
+main{
+	position: relative;
+	margin-top:4%;
+	display: inline-block;
+	margin-left: 5%;
+	margin-right: 3%;
+	width:65%;
+}
+
+
+        /* COLUMN FOR SOME INFO ABOUT ARTIST */
+
+        /* 	IN THIS SECTION ARTIST INFO DIV HAVE SOME INLINE CSS TO GIVE FONT SIZE TO SPAN */
+
+
+#about-artist{
+	background-color: #131C44;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width:100%;
+	left: 5%;
+	top:10%;
+	color: white;
+}
+
+
+#artist-info h3{
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+
+#about-artist #artist-image{
+	width: 38%;
+}
+
+
+#artist-image img{
+	height: 100%;
+	width:100%;
+}
+
+
+#about-artist #artist-info{
+	top: 5%;
+	bottom: 5%;
+	height: 90%;
+	width:58%;
+}
+
+
+#about-artist #artist-info >p{
+      position:relative;
+      top:-30px;
+}
+
+
+button{
+	background-image:linear-gradient(45deg,cyan,blue) ;
+	color: white;
+	height:30px;
+	width: 150px;
+	margin-right: 5%;
+	text-align: center;
+	border:none;
+}
+
+
+     /*  LIST OF SONGS FOR VISITED ARTIST */
+
+
+#list{
+	width:100%;
+}
+
+
+#list div{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+	background-color: #21243B;
+	margin-left: -41px;
+}
+
+
+#list div li{
+	margin-left:30px;
+	color:white;
+}
+
+#list li img{
+	height:100%;
+	width: 50px;
+}
+
+#list li span{
+	display:inline-block;
+	top:-10px;
+	position:relative;
+	font-size: smaller;
+}
+
+
+#list .like-the-song{
+	position: relative;
+	left:90%;
+	top: -35px;
+	height: 20px;
+	width: 20px;
+	margin-right:5%;
+}
+
+
+#list .like-the-song img{
+	height: 20px;
+	width: 20px;
+}
+
+
+#list .like-the-song .like{
+	position: relative;
+	left: -5%;
+	top:-120%;
+	height:0px;
+	width:0px;
+}
+
+
+#list .like-the-song:hover .like{
+	height:20px;
+	width:20px;  
+}
+
+
+#list .add-to-fav{
+	height: 50px;
+	width: 50px;
+	position:  relative;
+	left: 90%;
+	top:-81px;
+}
+
+
+     /* RIGHT SIDE QUEUE */
+
+
+#right-side-queue{
+	display: inline-block;
+	position:fixed;
+	top:-14%;
+	padding-top:150px;
+	padding-bottom:0;    
+	height:100%;
+	width:30%;
+	background-color:transparent;
+}
+
+
+#right-side-queue-inner {
+	height:100%;
+	width:100%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	color: white;
+}
+
+
+       /* SIMILAR ARTISTS SECTION */ 
+
+
+       /*    THIS SECTION HAVE SOME INLINE CSS IN SIMILAR ARTIST LIST DIV -> SPAN   */   
+
+
+#similar-artists{
+	width:100%;
+	color:white;
+}
+
+
+h2{
+	display: inline-block;
+	margin-right:30%
+}
+
+
+#similar-artists-list li{
+	position:relative;
+	height: 60px;
+	width: 100%;
+	margin-bottom: 10px;
+	left:-25px;
+
+}
+
+
+#similar-artists-list li div{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	height:100%;
+	width:100%;
+
+}
+
+
+#similar-artists-list img{
+	height:60px;
+	width:60px;
+	display:inline-block;
+}
+
+
+#similar-artists-list span{
+	position:relative;
+	left:5%;
+	display:inline-block;
+}
+
+
+.dot{
+	display:inline-block;
+	transform:rotate(90deg) scale(0.3);
+	position:absolute;
+	left:80%;
+	top:-25px;
+}
+
+
+     /* RECENTLY PLAYED SONGS LIST */
+
+
+#right-side-queue-inner ol li{
+	height: 30px;
+	margin-bottom: 20px;
+}
+
+
+#right-side-queue-inner ol li span{
+	display:inline-block;
+	position:relative;
+	font-size: smaller;
+}
+
+
+#right-side-queue-inner ol li img{
+	height: 100%;
+	width: 30px;
+}
+
+
+#right-side-queue-inner #like{
+	position: relative;
+	left:50%;
+	height: 20px;
+	width: 20px;
+	z-index: -1;
+}
+
+
+#right-side-queue-inner .like-the-song{
+	position: relative;
+	left:80%;
+	top: -20px;
+	height: 20px;
+	width: 20px;
+}
+
+#right-side-queue-inner .like-the-song img{
+	height: 20px;
+	width: 20px;
+}
+
+#right-side-queue-inner .like-the-song .like{
+	position: relative;
+	left: -5%;
+	top:-120%;
+	height:0px;
+	width:0px;
+}
+
+
+#right-side-queue-inner .like-the-song:hover .like{
+	height:20px;
+	width:20px;
+   
+}
+
+
+       /* FOR RESPONSIVENES */
+
+       /* CHANGES OCCUR WHEN SCREEN SIZE IS LESS THAN OR EQUAL TO 870PX */
+
+
+@media screen and (max-width: 870px){
+
+	#favourites{
+		height:0px;
+		width:0px;
+		overflow: hidden;
+		margin:0;
+	}
+
+
+	#search-bar{
+		height:0px;
+		width:0px;
+		overflow: hidden;
+	}
+
+
+	#notification{
+		height:0px;
+		width:0px;
+		overflow:hidden;
+	}
+
+
+	#account{
+		height:0px;
+		width:0px;
+		overflow:hidden;
+	}
+
+
+	#side-menu{
+		position:absolute;
+		top:5px;
+		left:90vw;
+		height: 30px;
+		width: 30px;
+	}
+
+
+	#side-menu img{
+		height: 30px;
+		width: 30px;
+		
+	}
+
+
+	#side-menu-search-bar img{
+		height:20px;
+		width:20px;
+	}
+
+
+	#side-menu:hover #side-menu-menu{
+		padding:30px;
+		width:400px;
+		height:100%;
+    }
+
+
+    main{
+		width:55%;
+	}
+
+
+	#right-side-queue{
+		width:40%;
+	}
+
+
+    #about-artist{
+		flex-direction:column;
+		align-items:center;
+	}
+
+
+	#about-artist #artist-image{
+		width:100%;
+	}
+
+
+	#about-artist #artist-info{
+		width:90%;
+	}
+
+
+}
+
+
+
+     /* CHANGES OCCUR WHEN SCREEN SIZE IS LESS THAN OR EQUAL TO 650PX */
+
+
+@media screen and (max-width:650px){
+
+	main{
+		width:45%;
+	}
+	
+		
+	#list .add-to-fav{
+		left:80%;
+	}
+
+
+	#right-side-queue{
+		width:50%;
+	}
+
+
+}
+
+
+
+     /* CHAMGES OCCUR WHEN SCREEN SIZE IS LESS THAN OR EQUAL TO 550PX */
+
+
+@media screen and (max-width:550px){
+	main{
+		width:90%;
+	}
+
+
+	#right-side-queue{
+		width:0;
+		height:0;
+		overflow:hidden;
+	}
+
+
+}
+
+		
+		/* CHANGES OCCUR WHEN SCREEN SIZE IS LESS THAN OR EQUAL TO 250PX */
+
+
+@media screen and (max-width:250px){
+
+	#list .like-the-song{
+		height:0;
+		width:0;
+		overflow:hidden;
+	}
+	
+
+	#list .add-to-fav{
+		height:0;
+		width:0;
+		overflow:hidden;
+	}
+
+
+}
